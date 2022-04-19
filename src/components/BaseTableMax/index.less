@@ -1,0 +1,31 @@
+@import "~antd/es/style/themes/default.less";
+.baseTable {
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  border-top: 10px solid @primary-color;
+  padding: 20px 0px;
+  &-top {
+    padding: 0px 20px 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    &-left {
+      flex: 1 1;
+      display: inline-block;
+    }
+    &-right {
+      .barIcon {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.ant-table-thead > tr > th {
+  font-weight: 600;
+}
+.resetSpan {
+  color: @primary-color;
+  cursor: pointer;
+  float: right;
+}
